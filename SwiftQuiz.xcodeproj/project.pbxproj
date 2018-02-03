@@ -12,6 +12,13 @@
 		000DB3E42025D2010020CA6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000DB3E22025D2010020CA6E /* Main.storyboard */; };
 		000DB3E62025D2010020CA6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000DB3E52025D2010020CA6E /* Assets.xcassets */; };
 		000DB3E92025D2010020CA6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000DB3E72025D2010020CA6E /* LaunchScreen.storyboard */; };
+		000DB3F12025D8150020CA6E /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB3F02025D8150020CA6E /* QuizViewController.swift */; };
+		000DB3F32025D82D0020CA6E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB3F22025D82D0020CA6E /* ResultViewController.swift */; };
+		000DB3F52025E41E0020CA6E /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB3F42025E41E0020CA6E /* Quiz.swift */; };
+		000DB3F72025E4400020CA6E /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DB3F62025E4400020CA6E /* QuizManager.swift */; };
+		000DB3FC202601D70020CA6E /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = 000DB3F9202601D60020CA6E /* 01.png */; };
+		000DB3FD202601D70020CA6E /* 03.png in Resources */ = {isa = PBXBuildFile; fileRef = 000DB3FA202601D70020CA6E /* 03.png */; };
+		000DB400202602970020CA6E /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = 000DB3FF202602970020CA6E /* 02.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		000DB3E52025D2010020CA6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		000DB3E82025D2010020CA6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		000DB3EA2025D2010020CA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000DB3F02025D8150020CA6E /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		000DB3F22025D82D0020CA6E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		000DB3F42025E41E0020CA6E /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		000DB3F62025E4400020CA6E /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
+		000DB3F9202601D60020CA6E /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		000DB3FA202601D70020CA6E /* 03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 03.png; sourceTree = "<group>"; };
+		000DB3FF202602970020CA6E /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,29 @@
 		000DB3DD2025D2010020CA6E /* SwiftQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				000DB3F82025F2FF0020CA6E /* screenshot */,
 				000DB3DE2025D2010020CA6E /* AppDelegate.swift */,
 				000DB3E02025D2010020CA6E /* ViewController.swift */,
 				000DB3E22025D2010020CA6E /* Main.storyboard */,
 				000DB3E52025D2010020CA6E /* Assets.xcassets */,
 				000DB3E72025D2010020CA6E /* LaunchScreen.storyboard */,
 				000DB3EA2025D2010020CA6E /* Info.plist */,
+				000DB3F02025D8150020CA6E /* QuizViewController.swift */,
+				000DB3F22025D82D0020CA6E /* ResultViewController.swift */,
+				000DB3F42025E41E0020CA6E /* Quiz.swift */,
+				000DB3F62025E4400020CA6E /* QuizManager.swift */,
 			);
 			path = SwiftQuiz;
+			sourceTree = "<group>";
+		};
+		000DB3F82025F2FF0020CA6E /* screenshot */ = {
+			isa = PBXGroup;
+			children = (
+				000DB3F9202601D60020CA6E /* 01.png */,
+				000DB3FF202602970020CA6E /* 02.png */,
+				000DB3FA202601D70020CA6E /* 03.png */,
+			);
+			path = screenshot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +152,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000DB3FD202601D70020CA6E /* 03.png in Resources */,
 				000DB3E92025D2010020CA6E /* LaunchScreen.storyboard in Resources */,
 				000DB3E62025D2010020CA6E /* Assets.xcassets in Resources */,
+				000DB3FC202601D70020CA6E /* 01.png in Resources */,
 				000DB3E42025D2010020CA6E /* Main.storyboard in Resources */,
+				000DB400202602970020CA6E /* 02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +168,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000DB3F12025D8150020CA6E /* QuizViewController.swift in Sources */,
+				000DB3F52025E41E0020CA6E /* Quiz.swift in Sources */,
 				000DB3E12025D2010020CA6E /* ViewController.swift in Sources */,
 				000DB3DF2025D2010020CA6E /* AppDelegate.swift in Sources */,
+				000DB3F72025E4400020CA6E /* QuizManager.swift in Sources */,
+				000DB3F32025D82D0020CA6E /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,12 +311,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guilhermebury.SwiftQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -289,12 +326,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guilhermebury.SwiftQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
